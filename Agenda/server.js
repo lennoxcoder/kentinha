@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require('mongoose');
 
 
-const connectionString='mongodb+srv://lennox:123321@cluster0.xxbnf.mongodb.net/AGENDA?retryWrites=true&w=majority'
+const connectionString='mongodb+srv://lennox:<pass>@cluster0.xxbnf.mongodb.net/AGENDA?retryWrites=true&w=majority'
 
 mongoose.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
